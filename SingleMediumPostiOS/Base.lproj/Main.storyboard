@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SingleMediumPostiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Loading URL https://medium.com/media/e503958f7bcab727112185447b506536?maxWidth=720" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qda-sC-c0l">
+                                <rect key="frame" x="20" y="521" width="560" height="59"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtK-Dk-9oE">
+                                <rect key="frame" x="20" y="28" width="560" height="493"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YtK-Dk-9oE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Afg-Tu-EmL"/>
+                            <constraint firstItem="qda-sC-c0l" firstAttribute="trailing" secondItem="YtK-Dk-9oE" secondAttribute="trailing" id="PAG-ZV-alf"/>
+                            <constraint firstItem="qda-sC-c0l" firstAttribute="leading" secondItem="YtK-Dk-9oE" secondAttribute="leading" id="Rup-VH-aT8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YtK-Dk-9oE" secondAttribute="leading" id="ehi-w0-YnL"/>
+                            <constraint firstItem="qda-sC-c0l" firstAttribute="top" secondItem="YtK-Dk-9oE" secondAttribute="bottom" constant="8" id="pSz-Wd-Zit"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YtK-Dk-9oE" secondAttribute="trailing" id="tBB-64-IkD"/>
+                            <constraint firstItem="YtK-Dk-9oE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tf9-BB-Kxj"/>
+                            <constraint firstItem="qda-sC-c0l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="u2p-gx-hf4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YtK-Dk-9oE" secondAttribute="bottom" constant="79" id="zqR-TP-Jvi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="YtK-Dk-9oE" id="d7M-Bn-Qi8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="437"/>
+        </scene>
+    </scenes>
+</document>
